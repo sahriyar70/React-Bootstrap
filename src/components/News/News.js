@@ -3,7 +3,7 @@ import { Card,Button } from 'react-bootstrap';
 
 const News = (props) => {
   console.log(props.article)
-  const {title,description} = props.article || {};
+  const {title,description,author} = props.article || {};
   
     return (
         
@@ -14,7 +14,7 @@ const News = (props) => {
         <Card.Text>
         {description}
         </Card.Text>
-        <Button variant="primary">Go somewhere</Button>
+        <Button variant="primary">{author} </Button>
       </Card.Body>
     </Card>
     
